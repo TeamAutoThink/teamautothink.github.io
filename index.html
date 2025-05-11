@@ -13,9 +13,14 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <!-- <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +69,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section">
       <div class="hero-bg">
-        <img src="assets/img/hero-bg-light.webp" alt="">
+        <img src="assets/img/original-2b6de588ba070314868062ea7c6142c9.gif" alt="">
       </div>
       <div class="container text-center">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -74,7 +79,7 @@
             <a href="#about" class="btn-get-started">Get Started</a>
             <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div> -->
-          <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+          <!-- <img src="assets/img/hero-services-img.webp" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300"> -->
         </div>
       </div>
 
@@ -119,7 +124,7 @@
             <div class="service-item item-orange position-relative">
               <i class="bi bi-ticket icon"></i>
               <div>
-                <h3>Hosted                </h3>
+                <h3>Hosting</h3>
                 <p>AutoThink design and host AI agents for you.                </p>
                 <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
               </div>
@@ -155,35 +160,142 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Get In Touch</h2>
-        <p>If you're interested in transforming your business with AI, we'd love to hear from you.</p>
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
 
         <div class="row gy-4">
 
-          <div class="col-lg-12 col-md-12">
-            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope"></i>
-              <h3>Email Us</h3>
-              <p>mailto: sales@auto-think.in</p>
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Free Plan <sup><i class="bi bi-info-circle" data-bs-toggle="tooltip" title="This is a proof of concept. Full functionality is not included. Final implementation will be determined later."></i></sup></h3>
+              <p class="description">Get your POC created for free</p>
+              <h4><sup>$</sup>0<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <!-- <p class="text-center small">No credit card required</p> -->
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Get your POC created for free</span></li>
+                <li><i class="bi bi-check"></i> <span>Using botpress</span></li>
+                <li><i class="bi bi-check"></i> <span>Using n8n</span></li>
+                <li><i class="bi bi-check"></i> <span>Integration with services like google, marketing tools etc.</span></li>
+                <li><i class="bi bi-check"></i> <span>Use website FAQ, Database, Files for RAG Application</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Custom coding using javascript, java, nodejs, python, vactor databases etc.</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Self hosing using AWS, Azure, Google Cloud Etc.</span></li>
+              </ul>
             </div>
-          </div><!-- End Info Item -->
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <!-- <p class="popular">Popular</p> -->
+              <h3>Business Plan</h3>
+              <p class="description">Build your production ready product using botpress and n8n</p>
+              <!-- <h4><sup>$</sup>29<span> / month</span></h4> -->
+              <a href="#" class="cta-btn">Get a quote</a>
+              <!-- <p class="text-center small">No credit card required</p> -->
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Build your production ready product</span></li>
+                <li><i class="bi bi-check"></i> <span>Using botpress</span></li>
+                <li><i class="bi bi-check"></i> <span>Using n8n</span></li>
+                <li><i class="bi bi-check"></i> <span>Integration with services like google, marketing tools etc.</span></li>
+                <li><i class="bi bi-check"></i> <span>Use website FAQ, Database, Files for RAG Application</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Custom coding using javascript, java, nodejs, python, vactor databases etc.</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Self hosing using AWS, Azure, Google Cloud Etc.</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Developer Plan</h3>
+              <p class="description">Build your production ready product using hybrid solutions</p>
+              <!-- <h4><sup>$</sup>49<span> / month</span></h4> -->
+              <a href="#" class="cta-btn">Get a quote</a>
+              <!-- <p class="text-center small">No credit card required</p> -->
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Build your production ready product</span></li>
+                <li><i class="bi bi-check"></i> <span>Using botpress</span></li>
+                <li><i class="bi bi-check"></i> <span>Using n8n</span></li>
+                <li><i class="bi bi-check"></i> <span>Integration with services like google, marketing tools etc.</span></li>
+                <li><i class="bi bi-check"></i> <span>Use website FAQ, Database, Files for RAG Application</span></li>
+                <li ><i class="bi bi-check"></i> <span>Custom coding using javascript, java, nodejs, python, vactor databases etc.</span></li>
+                <li ><i class="bi bi-check"></i> <span>Self hosing using AWS, Azure, Google Cloud Etc.</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
 
         </div>
+
       </div>
 
-    </section><!-- /Contact Section -->
+    </section><!-- /Pricing Section -->
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="contact" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">AutoThink</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <!-- <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p> -->
+            <p><strong>Email:</strong> <span>sales@auto-think.in</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a> -->
+            <a href="https://medium.com/@auto-think"><i class="bi bi-medium"></i></a>
+            <a href="https://www.linkedin.com/company/auto-think/"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+        
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Tailored AI Agents</a></li>
+            <li><a href="#">Hosting</a></li>
+            <li><a href="#">Predictive Analytics</a></li>
+            <li><a href="#">Knowledge Base Chat</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
 
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">AutoThink</strong><span>All Rights Reserved</span></p>
@@ -192,7 +304,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        California, USA | sales@auto-think.in
+        Designed by <a href="https://auto-think.in/">AutoThink</a>
       </div>
     </div>
 
@@ -213,6 +325,10 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+  </script>
 
 </body>
 

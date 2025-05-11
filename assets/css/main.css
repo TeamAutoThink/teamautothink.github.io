@@ -13,24 +13,33 @@
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
+  --heading-font: "Roboto",  sans-serif;
   --nav-font: "Inter",  sans-serif;
 }
 
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #3d4348; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #3e5055; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #388da8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #000000; /* Background color for the entire website, including individual sections */
+  --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ffffff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #000000; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #000000; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #313336;  /* The default color of the main navmenu links */
-  --nav-hover-color: #77b6ca; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #787878; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #313336; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -40,8 +49,8 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f8fbfc;
-  --surface-color: #ffffff;
+  --background-color: #000000;
+  --surface-color: #000000;
 }
 
 .dark-background {
@@ -145,7 +154,7 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  /* padding: 20px 0; */
   transition: all 0.5s;
   z-index: 997;
 }
@@ -215,15 +224,15 @@ h6 {
 
 /* Index Page Header
 ------------------------------*/
-.index-page .header {
+/* .index-page .header, .index-page.scrolled .header {
   --background-color: rgba(255, 255, 255, 0);
-}
+} */
 
 /* Index Page Header on Scroll
 ------------------------------*/
-.index-page.scrolled .header {
-  --background-color: #ffffff;
-}
+/* .index-page.scrolled .header {
+  --background-color: var(--default-color);
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -259,6 +268,7 @@ h6 {
     white-space: nowrap;
     transition: 0.3s;
   }
+  
 
   .navmenu a i,
   .navmenu a:focus i {
@@ -871,7 +881,7 @@ section,
 
 .hero .hero-bg::before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 15%);
+  background: color-mix(in srgb, var(--background-color), transparent 24%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1407,6 +1417,7 @@ section,
   padding: 40px 40px;
   height: 100%;
   border-radius: 15px;
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 .pricing h3 {
@@ -1946,4 +1957,20 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.tooltip-inner {
+  background-color: #ffffff !important; /* White background */
+  color: #000000 !important;            /* Black text */
+  border: 1px solid #ccc;               /* Optional: subtle border */
+}
+
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-start .tooltip-arrow::before,
+.bs-tooltip-end .tooltip-arrow::before {
+  border-top-color: #ffffff !important;
+  border-bottom-color: #ffffff !important;
+  border-left-color: #ffffff !important;
+  border-right-color: #ffffff !important;
 }
